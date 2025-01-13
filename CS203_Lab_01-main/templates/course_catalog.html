@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Page Title -->
+<h1 class="text-center">Course Catalog</h1>
+
+<!-- Spacer to separate the title from the course list -->
+<div style="margin-bottom: 30px;"></div>
+
+<div class="container">
+    <!-- Course List -->
+    <ul class="list-group">
+        {% for course in courses %}
+            <li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid #ccc; margin-bottom: 10px;">
+                
+                <!-- Course Name and Code Displayed in the List -->
+                <span>{{ course.name }} - {{ course.code }}</span>
+                
+                <!-- Button Container for Course Actions -->
+                <div class="btn-group" role="group" aria-label="Course Actions">
+                    <!-- View Details Button (Navigates to Course Details Page) -->
+                    <a href="{{ url_for('course_details', code=course['code']) }}" class="btn btn-primary btn-sm" style="margin-left: 10px;">View Details</a>
+                    
+                    <!-- Delete Button (Starts Course Deletion) -->
+                    <form action="{{ url_for('delete_course', code=course['code']) }}" method="POST" style="display:inline-block; margin-left: 10px;">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Add New Course Button -->
+<div class="text-center mt-4">
+    <a href="{{ url_for('add_course') }}" class="btn btn-primary" style="margin-bottom: 20px;">Add New Course</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}{{ course.name }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="course-details-box">
+
+        <!-- Course Name and Code -->
+        <h1 class="text-center">{{ course.name }} ({{ course.code }})</h1>
+
+        <!-- Spacer between course title and other details -->
+        <div class="spacer"></div>
+        <div style="margin-bottom: 30px;"></div>
+
+        <!-- Course Details Section in Boxes -->
+        <!-- Course Name -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Course name:</strong> {{ course.name }}
+            </div>
+        </div>
+
+        <!-- Course Code -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Course code:</strong> {{ course.code }}
+            </div>
+        </div>
+
+        <!-- Instructor -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Instructor:</strong> {{ course.instructor }}
+            </div>
+        </div>
+
+        <!-- Semester -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Semester:</strong> {{ course.semester or "Not specified" }}
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Schedule:</strong> {{ course.schedule or "Not specified" }}
+            </div>
+        </div>
+
+        <!-- Classroom -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Classroom:</strong> {{ course.classroom or "Not specified" }}
+            </div>
+        </div>
+
+        <!-- Prerequisites -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Prerequisites:</strong> {{ course.prerequisites or "Not specified" }}
+            </div>
+        </div>
+
+        <!-- Grading Information -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Grading:</strong> {{ course.grading or "Not specified" }}
+            </div>
+        </div>
+
+        <!-- Course Description -->
+        <div class="course-detail-item card">
+            <div class="card-body">
+                <strong>Description:</strong> {{ course.description or "No description provided" }}
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;"></div>
+
+        <!-- Back to Catalog Button -->
+        <div class="container text-center mt-4">
+            <a href="{{ url_for('course_catalog') }}" class="btn btn-primary">Back to Catalog</a>
+        </div>
+
+        <div style="margin-bottom: 20px;"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block title %}Add Course{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Page Title and Instructions -->
+    <h1 class="text-center">Add a New Course</h1>
+    <p class="text-muted text-center">Fill out the form below to add a new course to the catalog.</p>
+
+    <!-- Course Addition Form -->
+    <form action="{{ url_for('add_course') }}" method="POST" class="mt-4">
+
+        <!-- Course Code Input -->
+        <div class="mb-3">
+            <label for="code" class="form-label">Course Code <span style="color: red;">*</span></label>
+            <input 
+                type="text" 
+                name="code" 
+                id="code" 
+                class="form-control" 
+                placeholder="e.g., CS 328" 
+                required 
+                value="{{ request.form.code or '' }}"
+            >
+        </div>
+
+        <!-- Course Name Input -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Course Name <span style="color: red;">*</span></label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                class="form-control" 
+                placeholder="e.g., Introduction to Data Science" 
+                required 
+                value="{{ request.form.name or '' }}"
+            >
+        </div>
+
+        <!-- Instructor Input -->
+        <div class="mb-3">
+            <label for="instructor" class="form-label">Instructor <span style="color: red;">*</span></label>
+            <input 
+                type="text" 
+                name="instructor" 
+                id="instructor" 
+                class="form-control" 
+                placeholder="e.g., Anirban Dasgupta" 
+                required 
+                value="{{ request.form.instructor or '' }}"
+            >
+        </div>
+
+        <!-- Semester Input -->
+        <div class="mb-3">
+            <label for="semester" class="form-label">Semester</label>
+            <input 
+                type="text" 
+                name="semester" 
+                id="semester" 
+                class="form-control" 
+                placeholder="e.g., Fall 2024" 
+                value="{{ request.form.semester or '' }}"
+            >
+        </div>
+
+        <!-- Schedule Input -->
+        <div class="mb-3">
+            <label for="schedule" class="form-label">Schedule</label>
+            <input 
+                type="text" 
+                name="schedule" 
+                id="schedule" 
+                class="form-control" 
+                placeholder="e.g., Mon/Wed 10:00 AM" 
+                value="{{ request.form.schedule or '' }}"
+            >
+        </div>
+
+        <!-- Classroom Input -->
+        <div class="mb-3">
+            <label for="classroom" class="form-label">Classroom</label>
+            <input 
+                type="text" 
+                name="classroom" 
+                id="classroom" 
+                class="form-control" 
+                placeholder="e.g., Room 102" 
+                value="{{ request.form.classroom or '' }}"
+            >
+        </div>
+
+        <!-- Prerequisites Input -->
+        <div class="mb-3">
+            <label for="prerequisites" class="form-label">Prerequisites</label>
+            <input 
+                type="text" 
+                name="prerequisites" 
+                id="prerequisites" 
+                class="form-control" 
+                placeholder="e.g., Basic Python, Linux" 
+                value="{{ request.form.prerequisites or '' }}"
+            >
+        </div>
+
+        <!-- Grading Input -->
+        <div class="mb-3">
+            <label for="grading" class="form-label">Grading</label>
+            <input 
+                type="text" 
+                name="grading" 
+                id="grading" 
+                class="form-control" 
+                placeholder="e.g., 50% Assignment, 50% Quiz" 
+                value="{{ request.form.grading or '' }}"
+            >
+        </div>
+
+        <!-- Description Textarea -->
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea 
+                name="description" 
+                id="description" 
+                rows="4" 
+                class="form-control" 
+                placeholder="Provide a brief course description"
+            >{{ request.form.description or '' }}</textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Add Course</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
