@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "code": "CS 203",
+        "name": "STTAI",
+        "instructor": "Mayank Singh",
+        "semester": "",
+        "schedule": "",
+        "classroom": "",
+        "prerequisites": "",
+        "grading": "",
+        "description": ""
+    }
+]

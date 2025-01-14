@@ -143,13 +143,20 @@ def validate_course(data):
         # Defining required fields for course validation
         required_fields = ['code', 'name', 'instructor']
 
+        if 'missing_field_errors' not in session:
+                session['missing_field_errors'] = 0
+                
         # Checking for empty required fields
         empty_fields = [field for field in required_fields if not data.get(field, "").strip()]
 
         # If required fields are missing, logging and returning error
         if empty_fields:
+            missing_field_errors = session['missing_field_errors']
+            missing_field_errors+=1
             span.set_attribute("validation.status", "error")
             span.set_attribute("missing_fields", ", ".join(empty_fields))
+            session['missing_field_errors'] = missing_field_errors
+            span.set_attribute("error.missing_fields", missing_field_errors)
 
             # End timing for the validation process
             end_time = time.time()
@@ -340,19 +347,6 @@ def add_course():
                 'grading': request.form['grading'],
                 'description': request.form['description']
             }
-
-            # Checking for missing required fields
-            required_fields = ['code', 'name', 'instructor']
-            empty_fields = [field.capitalize() for field in required_fields if not course.get(field).strip()]
-
-            # If there are missing required fields, logging and flashing an error
-            if empty_fields:
-                missing_field_errors += 1
-                fields = ", ".join(empty_fields)
-                flash(f"The following fields are required and cannot be empty: {fields}.", "error")
-                session['missing_field_errors'] = missing_field_errors  # Update session error count
-                span.set_attribute("error.missing_fields", missing_field_errors)
-                return render_template('add_course.html', course=course)
 
             # Validating the course data
             validation_start_time = time.time()

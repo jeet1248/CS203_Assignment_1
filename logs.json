@@ -2,3 +2,113 @@
 2025-01-14 01:16:57,802 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0078046321868896484, "processing.time": 0.06818962097167969}
 2025-01-14 01:17:00,089 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 0, "load.time": 0.001007080078125}
 2025-01-14 01:17:00,091 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0020029544830322266, "processing.time": 0.0009984970092773438}
+2025-01-14 14:21:40,429 - INFO - {"event": "render-index", "http.method": "GET", "http.url": "http://127.0.0.1:5000/", "user.ip": "127.0.0.1", "render.time": 0.013223886489868164}
+2025-01-14 14:21:44,438 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 0, "load.time": 0.0020651817321777344}
+2025-01-14 14:21:44,444 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0020651817321777344, "processing.time": 0.006018877029418945}
+2025-01-14 14:23:07,499 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 0, "load.time": 0.0030181407928466797}
+2025-01-14 14:23:07,501 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.004023075103759766, "processing.time": 0.0009844303131103516}
+2025-01-14 14:25:22,367 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 14:25:22,370 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 0, "load.time": 0.0020079612731933594}
+2025-01-14 14:25:22,376 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.007903575897216797}
+2025-01-14 14:25:22,377 - INFO - {"event": "course-added", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1", "save.time": 0.008908271789550781}
+2025-01-14 14:25:22,420 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.01812124252319336}
+2025-01-14 14:25:22,420 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.01812124252319336, "processing.time": 0.0}
+2025-01-14 14:32:39,931 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 14:32:39,939 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 1, "load.time": 0.0076901912689208984}
+2025-01-14 14:32:39,942 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.010669469833374023}
+2025-01-14 14:32:39,942 - INFO - {"event": "course-added", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1", "save.time": 0.010669469833374023}
+2025-01-14 14:32:39,991 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 2, "load.time": 0.025878429412841797}
+2025-01-14 14:32:39,991 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.025878429412841797, "processing.time": 0.0}
+2025-01-14 14:41:17,587 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/delete_course/%20%20a", "course.count": 2, "load.time": 0.0024797916412353516}
+2025-01-14 14:41:17,590 - INFO - {"event": "course-deleted", "course.code": "  a", "http.url": "http://127.0.0.1:5000/delete_course/%20%20a", "delete.time": 0.006056070327758789}
+2025-01-14 14:41:17,590 - INFO - {"event": "course-deleted", "course.code": "  a", "http.method": "POST", "http.url": "http://127.0.0.1:5000/delete_course/%20%20a", "user.ip": "127.0.0.1", "course_deletion.time": 0.006056070327758789}
+2025-01-14 14:41:17,615 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.004050731658935547}
+2025-01-14 14:41:17,689 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.004050731658935547, "processing.time": 0.07394266128540039}
+2025-01-14 14:51:22,710 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "instructor", "validation.time": 0.0}
+2025-01-14 14:51:22,712 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 14:51:30,390 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.002001523971557617}
+2025-01-14 14:51:30,403 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0035161972045898438, "processing.time": 0.01300811767578125}
+2025-01-14 14:51:40,787 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "instructor", "validation.time": 0.0}
+2025-01-14 14:51:40,787 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 14:51:44,216 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "instructor", "validation.time": 0.0}
+2025-01-14 14:51:44,218 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 14:53:31,404 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0015189647674560547}
+2025-01-14 14:53:31,439 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0015189647674560547, "processing.time": 0.03475379943847656}
+2025-01-14 14:53:38,557 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.002002239227294922}
+2025-01-14 14:53:38,559 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.002002239227294922, "processing.time": 0.0010004043579101562}
+2025-01-14 14:54:00,450 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "Code, Name, Instructor", "validation.time": 0.0}
+2025-01-14 14:54:00,450 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - Code, Name, Instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 14:54:14,016 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0020189285278320312}
+2025-01-14 14:54:14,018 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0020189285278320312, "processing.time": 0.002030611038208008}
+2025-01-14 14:56:22,652 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0}
+2025-01-14 14:56:22,688 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0, "processing.time": 0.03616189956665039}
+2025-01-14 14:57:34,199 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "Code, Name, Instructor", "validation.time": 0.0}
+2025-01-14 14:57:34,199 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - Code, Name, Instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 14:58:18,446 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0009839534759521484}
+2025-01-14 14:58:18,453 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0009839534759521484, "processing.time": 0.0070688724517822266}
+2025-01-14 14:58:19,588 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/course/CS%20203", "course.count": 1, "load.time": 0.0010216236114501953}
+2025-01-14 14:58:19,589 - INFO - {"event": "course-details-viewed", "course.code": "CS 203", "http.method": "GET", "http.url": "http://127.0.0.1:5000/course/CS%20203"}
+2025-01-14 14:59:32,440 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0009944438934326172}
+2025-01-14 14:59:32,441 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0009944438934326172, "processing.time": 0.001003265380859375}
+2025-01-14 14:59:35,772 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0009975433349609375}
+2025-01-14 14:59:35,772 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0009975433349609375, "processing.time": 0.0}
+2025-01-14 14:59:42,502 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0}
+2025-01-14 14:59:42,503 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0010061264038085938, "processing.time": 0.0}
+2025-01-14 15:00:04,492 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "Code, Name, Instructor", "validation.time": 0.0010101795196533203}
+2025-01-14 15:00:04,492 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - Code, Name, Instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 15:17:35,321 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "Code, Name, Instructor", "validation.time": 0.0}
+2025-01-14 15:17:35,330 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - Code, Name, Instructor", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 15:20:14,534 - ERROR - {"event": "validate-course-error", "http.url": "http://127.0.0.1:5000/add_course", "missing_fields": "ccode", "validation.time": 0.0}
+2025-01-14 15:20:14,535 - ERROR - {"event": "course-add-error", "error.message": "Error: Missing required fields - ccode", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1"}
+2025-01-14 15:20:32,982 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 15:20:32,984 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 1, "load.time": 0.0}
+2025-01-14 15:20:32,992 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.007873773574829102}
+2025-01-14 15:21:39,605 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0010037422180175781}
+2025-01-14 15:21:39,607 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 2, "load.time": 0.0010724067687988281}
+2025-01-14 15:21:39,610 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.004403114318847656}
+2025-01-14 15:23:13,231 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 15:23:13,233 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 3, "load.time": 0.0009927749633789062}
+2025-01-14 15:23:13,237 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.0054931640625}
+2025-01-14 15:23:13,237 - INFO - {"event": "course-added", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1", "save.time": 0.0054931640625}
+2025-01-14 15:23:13,263 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 4, "load.time": 0.01788330078125}
+2025-01-14 15:23:13,281 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.01788330078125, "processing.time": 0.016763687133789062}
+2025-01-14 15:23:17,644 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "course.count": 4, "load.time": 0.006922721862792969}
+2025-01-14 15:23:17,650 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "delete.time": 0.012049198150634766}
+2025-01-14 15:23:17,650 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.method": "POST", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "user.ip": "127.0.0.1", "course_deletion.time": 0.012049198150634766}
+2025-01-14 15:23:17,663 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0}
+2025-01-14 15:23:17,663 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0, "processing.time": 0.0}
+2025-01-14 15:23:21,297 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0009777545928955078}
+2025-01-14 15:23:21,300 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.003103971481323242, "processing.time": 0.0018734931945800781}
+2025-01-14 15:23:29,847 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 15:23:29,850 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 1, "load.time": 0.0009968280792236328}
+2025-01-14 15:23:29,850 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.0013499259948730469}
+2025-01-14 15:23:29,850 - INFO - {"event": "course-added", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1", "save.time": 0.0013499259948730469}
+2025-01-14 15:23:29,873 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 2, "load.time": 0.01245260238647461}
+2025-01-14 15:23:29,874 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.013413429260253906, "processing.time": 0.0}
+2025-01-14 15:23:32,716 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "course.count": 2, "load.time": 0.002005338668823242}
+2025-01-14 15:23:32,720 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "delete.time": 0.0067119598388671875}
+2025-01-14 15:23:32,721 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.method": "POST", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "user.ip": "127.0.0.1", "course_deletion.time": 0.008692026138305664}
+2025-01-14 15:23:32,739 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.008534669876098633}
+2025-01-14 15:23:32,745 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.010070562362670898, "processing.time": 0.004071474075317383}
+2025-01-14 15:23:38,910 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.00099945068359375}
+2025-01-14 15:23:38,911 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.00099945068359375, "processing.time": 0.0010063648223876953}
+2025-01-14 15:25:09,341 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.001001596450805664}
+2025-01-14 15:25:09,344 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0020084381103515625, "processing.time": 0.0013108253479003906}
+2025-01-14 15:25:17,246 - WARNING - {"event": "validate-course-warning", "http.url": "http://127.0.0.1:5000/add_course", "warning_fields": "semester, schedule, classroom, prerequisites, grading, description", "validation.time": 0.0}
+2025-01-14 15:25:17,248 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/add_course", "course.count": 1, "load.time": 0.0009918212890625}
+2025-01-14 15:25:17,250 - INFO - {"event": "save-courses", "http.url": "http://127.0.0.1:5000/add_course", "save.time": 0.0030014514923095703}
+2025-01-14 15:25:17,250 - INFO - {"event": "course-added", "http.method": "POST", "http.url": "http://127.0.0.1:5000/add_course", "user.ip": "127.0.0.1", "save.time": 0.0030014514923095703}
+2025-01-14 15:25:17,261 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 2, "load.time": 0.0}
+2025-01-14 15:25:17,261 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0, "processing.time": 0.0}
+2025-01-14 15:34:15,376 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "course.count": 2, "load.time": 0.0}
+2025-01-14 15:34:15,376 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "delete.time": 0.0}
+2025-01-14 15:34:15,376 - INFO - {"event": "course-deleted", "course.code": "CS 328", "http.method": "POST", "http.url": "http://127.0.0.1:5000/delete_course/CS%20328", "user.ip": "127.0.0.1", "course_deletion.time": 0.0}
+2025-01-14 15:34:15,402 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0037012100219726562}
+2025-01-14 15:34:15,405 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.004748821258544922, "processing.time": 0.0017402172088623047}
+2025-01-14 15:35:16,397 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.001001119613647461}
+2025-01-14 15:35:16,401 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.002002716064453125, "processing.time": 0.0030117034912109375}
+2025-01-14 15:35:18,425 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/course/CS%20203", "course.count": 1, "load.time": 0.0}
+2025-01-14 15:35:18,425 - INFO - {"event": "course-details-viewed", "course.code": "CS 203", "http.method": "GET", "http.url": "http://127.0.0.1:5000/course/CS%20203"}
+2025-01-14 15:35:53,243 - INFO - {"event": "load-courses", "http.url": "http://127.0.0.1:5000/catalog", "course.count": 1, "load.time": 0.0010044574737548828}
+2025-01-14 15:35:53,244 - INFO - {"event": "render-course-catalog", "http.method": "GET", "http.url": "http://127.0.0.1:5000/catalog", "user.ip": "127.0.0.1", "course_loading.time": 0.0010044574737548828, "processing.time": 0.0010039806365966797}
+2025-01-14 15:35:55,057 - INFO - {"event": "render-index", "http.method": "GET", "http.url": "http://127.0.0.1:5000/", "user.ip": "127.0.0.1", "render.time": 0.03845334053039551}
